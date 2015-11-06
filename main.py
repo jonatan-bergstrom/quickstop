@@ -6,6 +6,7 @@ from tkinter import font
 from tkinter import filedialog
 import configparser
 import atexit
+import re
 
 root = Tk()
 root.geometry("800x480")
