@@ -32,7 +32,7 @@ opensans_big = font.Font(family="Open Sans Semibold", size=17)
 opensans_small = font.Font(family="Open Sans Semibold", size=16)
 default_font = font.nametofont("TkDefaultFont")
 default_font.configure(family="Open Sans Semibold", size=18)
-digital_big = font.Font(family="Digital-7", size=135)
+digital_big = font.Font(family="Digital-7", size=132)
 digital_small = font.Font(family="Digital-7", size=77)
 
 def writeConfig():
@@ -291,7 +291,7 @@ class RowObject():
     def __init__(self,frame,font1,value):
         self.name = 0
         self.value = value
-        self.label = Label(frame, pady=-10, justify=RIGHT, anchor=E, font=font1, text=self.value, background="#A7B1BA", fg="white")
+        self.label = Label(frame, pady=-10, justify=RIGHT, anchor=NE, font=font1, text=self.value, background="#A7B1BA", fg="white")
         self.label.bind("<Button-1>", self.clickdown)
     def select(self):
         self.label.config(background="#48525C")
