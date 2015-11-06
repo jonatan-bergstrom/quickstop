@@ -32,8 +32,8 @@ opensans_big = font.Font(family="Open Sans Semibold", size=17)
 opensans_small = font.Font(family="Open Sans Semibold", size=16)
 default_font = font.nametofont("TkDefaultFont")
 default_font.configure(family="Open Sans Semibold", size=18)
-digital_big = font.Font(family="Digital-7", size=132)
-digital_small = font.Font(family="Digital-7", size=77)
+digital_big = font.Font(family="Digital-7", size=130)
+digital_small = font.Font(family="Digital-7", size=75)
 
 def writeConfig():
     config = configparser.ConfigParser()
@@ -239,7 +239,7 @@ class LenLabelObject():
     def __init__(self):
         self.timecanvas =Canvas(mainframe, width=44, height=30,background="#E29A00", bd=0, highlightthickness=0, relief='ridge')
         self.timecanvas.place(anchor=W, x=610, y=340)
-        self.timecanvas.create_text(25,0, anchor=N, text=str(steplengtharray[steplength]), font=("opensans_small",17), fill="white", tags="timelabel")
+        self.timecanvas.create_text(25,0, anchor=N, text=str(steplengtharray[steplength]), font=("opensans_small",20), fill="white", tags="timelabel")
 
 class ValueObject:
     def __init__(self,frame,x1,y1,w,h,font1):
