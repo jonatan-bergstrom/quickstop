@@ -31,9 +31,9 @@ fastrate = 100
 opensans_big = font.Font(family="Open Sans Semibold", size=17)
 opensans_small = font.Font(family="Open Sans Semibold", size=16)
 default_font = font.nametofont("TkDefaultFont")
-default_font.configure(family="Open Sans Semibold", size=16)
-digital_big = font.Font(family="Digital-7", size=100)
-digital_small = font.Font(family="Digital-7", size=58)
+default_font.configure(family="Open Sans Semibold", size=18)
+digital_big = font.Font(family="Digital-7", size=135)
+digital_small = font.Font(family="Digital-7", size=77)
 
 def writeConfig():
     config = configparser.ConfigParser()
