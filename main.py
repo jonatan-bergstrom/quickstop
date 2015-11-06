@@ -245,7 +245,7 @@ class ValueObject:
     def __init__(self,frame,x1,y1,w,h,font1):
         self.name = ""
         self.value = "HOME"
-        self.label = Label(frame,  pady=-10, justify=RIGHT, anchor=E, font=font1, text=self.value, background="#48525C", fg="white")
+        self.label = Label(frame,  pady=-10, justify=RIGHT, anchor=NE, font=font1, text=self.value, background="#48525C", fg="white")
         self.label.place(x=x1,y=y1, width=w, height=h)
         self.label.bind("<Button-1>", self.clickdown)
     def add(self,value):
